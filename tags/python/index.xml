@@ -15,5 +15,26 @@
       <description>import randomimport argparseimport retotal=&amp;#39;0123456789&amp;#39;#全部数值parser = argparse.ArgumentParser(description=&amp;#39;Set Answer&amp;#39;)parser.add_argument(&amp;#39;--mysetguess&amp;#39;, dest=&amp;#39;mysetguess&amp;#39;, type=str, help= &amp;#34;游戏者自己设定的答案&amp;#34;, required=False,choices=set(4))args = parser.parse_args()print(args.mysetguess)print(&amp;#34;/*******************************猜数字游戏***********************************/&amp;#34;)print(&amp;#34;游戏规则：系统随机给出0-9的4位数字，您可以输入您猜测的4位数字，系统会比较并给予反馈，A表示数字对，且位置对，B表示数字对位置不对，如1A2B表示有1位您猜对了数字和位置，有2位您猜对数字，但位置不对。您总共有6次机会，加油哦！&amp;#34;)if args.mysetguess==None:answer = random.sample(total, 4)# 从total中随机获取4个不重复数else:answer = args.mysetguessfor guessTimes in range(6):#循环6次guess = &amp;#34;&amp;#34;for inputErros in range(3):#循环3次guess=input(&amp;#34;请输入4位0-9的不重复数字：&amp;#34;)if guess.isdigit()==True and len(guess)==4:#isdigit() 方法检测字符串是否只由数字组成且长度为4guessSet=set(guess)#set() 函数创建一个无序不重复元素集if len(guessSet)==4:##长度个数为4 and guessSet.isdisjoint(set()):#内容不与其他某个设置的值要不相交，相交falsebreakelse:print(&amp;#34;您没有理解游戏规则，错误次数3次，游戏结束。&amp;#34;)breakA=0B=0for j in range(4):if guess[j]==answer[j]:A+=1else:#for k in range(4):#if guess[j]==answer[k]:if guess[j] in answer:B+=1if A&amp;lt;4:if guessTimes&amp;lt;5:print(&amp;#34;%dA%dB，您还有%d次机会。&amp;#34; %(A,B,5-guessTimes))else:print(&amp;#34;很遗憾您没有猜对，答案是%s，再玩一局吧。&amp;#34; %(answer))else:print(&amp;#34;恭喜您猜对了！&amp;#34;)break </description>
     </item>
     
+    <item>
+      <title>Python 猜数字小功能</title>
+      <link>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</guid>
+      <description>里面主要涉及到while，for循环，if..else判断 代码如下:
+ fage = False mage =False bage=False father_age = 42 mather_age=41 boy_age=15 print(&amp;#34;Let&amp;#39;s guess the age!&amp;#34;) while fage == False: #当fage这个值等于False时，进入循环 guess_father =int(input(&amp;#39;\nyour guess father_age:&amp;#39;)) #输入你所猜测的父亲年龄 if guess_father == father_age: print(&amp;#39;you right!\n&amp;#39;) fage = True else: print(&amp;#39;\nyour is error!&amp;#39;) if guess_father &amp;lt; father_age: small = father_age - guess_father #当你猜测的数比答案小时，用答案减去猜测数等于相差数值 print(&amp;#39;maybe is small!differ:&amp;#39;, small) elif guess_father &amp;gt; father_age: big =guess_father - father_age print(&amp;#39;maybe is big!differ:&amp;#39;, big) while mage == False: guess_mather =int(input(&amp;#39;\nyour guess mather_age:&amp;#39;)) if guess_mather == mather_age: print(&amp;#39;you right!</description>
+    </item>
+    
+    <item>
+      <title>Python 爬取内容转存 TXT</title>
+      <link>https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</guid>
+      <description>需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库,需要用到selenium库对网页元素进行操作；安装chrome浏览器，下载并解压相对应版本的谷歌驱动：
+ from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
+ env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&amp;#39;usd_hlfile_path&amp;#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&amp;#39;rmb_hlfile_path&amp;#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&amp;#39;chromedriver_path&amp;#39;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver) chrome_options = Options() chrome_options.add_argument(&amp;#39;--no-sandbox&amp;#39;) chrome_options.add_argument(&amp;#39;--disable-dev-shm-usage&amp;#39;) chrome_options.add_argument(&amp;#39;--headless&amp;#39;) driver = webdriver.Chrome(options=chrome_options) #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&amp;#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&amp;#34;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &amp;#39;//*[@id=&amp;#34;main_content&amp;#34;]/table/tbody/tr/td/table/tbody&amp;#39;) print(hl.text) print(&amp;#39;ok&amp;#39;) except Exception as e: print(&amp;#39;no&amp;#39;) time.sleep(2) hlfile=open(rmbtxt,&amp;#39;w+&amp;#39;,encoding=&amp;#39;utf8&amp;#39;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&amp;#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&amp;#34;) time.</description>
+    </item>
+    
   </channel>
 </rss>
