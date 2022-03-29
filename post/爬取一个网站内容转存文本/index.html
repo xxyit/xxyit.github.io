@@ -13,12 +13,16 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python 爬取内容转存 TXT"/>
-<meta name="twitter:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库: &lsquo;&lt; from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver&gt;&rsquo;
-以下是主体部分: &lsquo;&lt; env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&lsquo;usd_hlfile_path&rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&lsquo;rmb_hlfile_path&rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&lsquo;chromedriver_path&rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver)&gt;&rsquo; &lsquo;&lt; chrome_options = Options() chrome_options.add_argument(&rsquo;&ndash;no-sandbox&rsquo;) chrome_options.add_argument(&rsquo;&ndash;disable-dev-shm-usage&rsquo;) chrome_options.add_argument(&rsquo;&ndash;headless&rsquo;) driver = webdriver.Chrome(options=chrome_options)&gt;&rsquo; &lsquo;&lt; #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&ldquo;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&quot;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &lsquo;//[@id=&ldquo;main_content&rdquo;]/table/tbody/tr/td/table/tbody&rsquo;) print(hl.text) print(&lsquo;ok&rsquo;) except Exception as e: print(&rsquo;no&rsquo;) time.sleep(2) hlfile=open(rmbtxt,&lsquo;w&#43;&rsquo;,encoding=&lsquo;utf8&rsquo;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver."/>
+<meta name="twitter:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库: &rsquo;&rsquo;&#39; from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver &rsquo;&#39;&#39;
+以下是主体部分: &rsquo;&rsquo;&#39; env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&lsquo;usd_hlfile_path&rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&lsquo;rmb_hlfile_path&rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&lsquo;chromedriver_path&rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver)
+chrome_options = Options() chrome_options.add_argument(&rsquo;&ndash;no-sandbox&rsquo;) chrome_options.add_argument(&rsquo;&ndash;disable-dev-shm-usage&rsquo;) chrome_options.add_argument(&rsquo;&ndash;headless&rsquo;) driver = webdriver.Chrome(options=chrome_options)
+#driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&ldquo;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&quot;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &lsquo;//[@id=&ldquo;main_content&rdquo;]/table/tbody/tr/td/table/tbody&rsquo;) print(hl.text) print(&lsquo;ok&rsquo;) except Exception as e: print(&rsquo;no&rsquo;) time.sleep(2) hlfile=open(rmbtxt,&lsquo;w&#43;&rsquo;,encoding=&lsquo;utf8&rsquo;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver."/>
 
     <meta property="og:title" content="Python 爬取内容转存 TXT" />
-<meta property="og:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库: &lsquo;&lt; from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver&gt;&rsquo;
-以下是主体部分: &lsquo;&lt; env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&lsquo;usd_hlfile_path&rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&lsquo;rmb_hlfile_path&rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&lsquo;chromedriver_path&rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver)&gt;&rsquo; &lsquo;&lt; chrome_options = Options() chrome_options.add_argument(&rsquo;&ndash;no-sandbox&rsquo;) chrome_options.add_argument(&rsquo;&ndash;disable-dev-shm-usage&rsquo;) chrome_options.add_argument(&rsquo;&ndash;headless&rsquo;) driver = webdriver.Chrome(options=chrome_options)&gt;&rsquo; &lsquo;&lt; #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&ldquo;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&quot;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &lsquo;//[@id=&ldquo;main_content&rdquo;]/table/tbody/tr/td/table/tbody&rsquo;) print(hl.text) print(&lsquo;ok&rsquo;) except Exception as e: print(&rsquo;no&rsquo;) time.sleep(2) hlfile=open(rmbtxt,&lsquo;w&#43;&rsquo;,encoding=&lsquo;utf8&rsquo;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver." />
+<meta property="og:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库: &rsquo;&rsquo;&#39; from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver &rsquo;&#39;&#39;
+以下是主体部分: &rsquo;&rsquo;&#39; env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&lsquo;usd_hlfile_path&rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&lsquo;rmb_hlfile_path&rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&lsquo;chromedriver_path&rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver)
+chrome_options = Options() chrome_options.add_argument(&rsquo;&ndash;no-sandbox&rsquo;) chrome_options.add_argument(&rsquo;&ndash;disable-dev-shm-usage&rsquo;) chrome_options.add_argument(&rsquo;&ndash;headless&rsquo;) driver = webdriver.Chrome(options=chrome_options)
+#driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&ldquo;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&quot;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &lsquo;//[@id=&ldquo;main_content&rdquo;]/table/tbody/tr/td/table/tbody&rsquo;) print(hl.text) print(&lsquo;ok&rsquo;) except Exception as e: print(&rsquo;no&rsquo;) time.sleep(2) hlfile=open(rmbtxt,&lsquo;w&#43;&rsquo;,encoding=&lsquo;utf8&rsquo;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-26T11:26:30+08:00" />
@@ -84,29 +88,28 @@
     <div class="post-content">
       <p>需要安装好Python环境，以下基于Python3实现，Windows10环境：
 所需Python的拓展库:
-&lsquo;&lt;
+&rsquo;&rsquo;'
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 import os
-from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver&gt;&rsquo;</p>
+from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver
+&rsquo;''</p>
 <p>以下是主体部分:
-&lsquo;&lt;
+&rsquo;&rsquo;'
 env_dist = os.environ # environ是在os.py中定义的一个dict environ = {}
 usdtxt=env_dist.get(&lsquo;usd_hlfile_path&rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本
 print (usdtxt)
 rmbtxt=env_dist.get(&lsquo;rmb_hlfile_path&rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本
 print (rmbtxt)
 chromedriver =env_dist.get(&lsquo;chromedriver_path&rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径
-print(chromedriver)&gt;&rsquo;
-&lsquo;&lt;
-chrome_options = Options()
+print(chromedriver)</p>
+<p>chrome_options = Options()
 chrome_options.add_argument(&rsquo;&ndash;no-sandbox&rsquo;)
 chrome_options.add_argument(&rsquo;&ndash;disable-dev-shm-usage&rsquo;)
 chrome_options.add_argument(&rsquo;&ndash;headless&rsquo;)
-driver = webdriver.Chrome(options=chrome_options)&gt;&rsquo;
-&lsquo;&lt;
-#driver=webdriver.Chrome(executable_path=chromedriver)
+driver = webdriver.Chrome(options=chrome_options)</p>
+<p>#driver=webdriver.Chrome(executable_path=chromedriver)
 driver.maximize_window()
 driver.get(&ldquo;<a href="https://huobiduihuan.bmcx.com/CNY__huobiduihuan/%22">https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&quot;</a>)
 time.sleep(2)
@@ -135,7 +138,8 @@ time.sleep(2)
 hlfile=open(usdtxt,&lsquo;w+&rsquo;,encoding=&lsquo;utf8&rsquo;)
 hlfile.write(hl.text)
 hlfile.close()
-driver.close()&gt;&rsquo;</p>
+driver.close()
+&rsquo;&rsquo;&rsquo;</p>
 
     </div>
     <div class="post-footer">
