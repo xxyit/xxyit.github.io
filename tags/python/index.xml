@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on 大熊的博客</title>
+    <link>https://www.ggood.xyz/tags/python/</link>
+    <description>Recent content in Python on 大熊的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ggood.xyz/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1A2B猜数字游戏功能</title>
+      <link>https://www.ggood.xyz/post/1a2b/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/1a2b/</guid>
+      <description>import randomimport argparseimport retotal=&amp;#39;0123456789&amp;#39;#全部数值parser = argparse.ArgumentParser(description=&amp;#39;Set Answer&amp;#39;)parser.add_argument(&amp;#39;--mysetguess&amp;#39;, dest=&amp;#39;mysetguess&amp;#39;, type=str, help= &amp;#34;游戏者自己设定的答案&amp;#34;, required=False,choices=set(4))args = parser.parse_args()print(args.mysetguess)print(&amp;#34;/*******************************猜数字游戏***********************************/&amp;#34;)print(&amp;#34;游戏规则：系统随机给出0-9的4位数字，您可以输入您猜测的4位数字，系统会比较并给予反馈，A表示数字对，且位置对，B表示数字对位置不对，如1A2B表示有1位您猜对了数字和位置，有2位您猜对数字，但位置不对。您总共有6次机会，加油哦！&amp;#34;)if args.mysetguess==None:answer = random.sample(total, 4)# 从total中随机获取4个不重复数else:answer = args.mysetguessfor guessTimes in range(6):#循环6次guess = &amp;#34;&amp;#34;for inputErros in range(3):#循环3次guess=input(&amp;#34;请输入4位0-9的不重复数字：&amp;#34;)if guess.isdigit()==True and len(guess)==4:#isdigit() 方法检测字符串是否只由数字组成且长度为4guessSet=set(guess)#set() 函数创建一个无序不重复元素集if len(guessSet)==4:##长度个数为4 and guessSet.isdisjoint(set()):#内容不与其他某个设置的值要不相交，相交falsebreakelse:print(&amp;#34;您没有理解游戏规则，错误次数3次，游戏结束。&amp;#34;)breakA=0B=0for j in range(4):if guess[j]==answer[j]:A+=1else:#for k in range(4):#if guess[j]==answer[k]:if guess[j] in answer:B+=1if A&amp;lt;4:if guessTimes&amp;lt;5:print(&amp;#34;%dA%dB，您还有%d次机会。&amp;#34; %(A,B,5-guessTimes))else:print(&amp;#34;很遗憾您没有猜对，答案是%s，再玩一局吧。&amp;#34; %(answer))else:print(&amp;#34;恭喜您猜对了！&amp;#34;)break </description>
+    </item>
+    
+  </channel>
+</rss>
