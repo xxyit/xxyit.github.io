@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 大熊的博客</title>
-    <link>https://xxyit.github.io/post/</link>
+    <link>https://www.ggood.xyz/post/</link>
     <description>Recent content in Posts on 大熊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Mar 2022 13:54:24 +0800</lastBuildDate><atom:link href="https://xxyit.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Mar 2022 13:54:24 +0800</lastBuildDate><atom:link href="https://www.ggood.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python 猜数字小功能</title>
-      <link>https://xxyit.github.io/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</link>
+      <link>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sun, 27 Mar 2022 13:54:24 +0800</pubDate>
       
-      <guid>https://xxyit.github.io/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</guid>
+      <guid>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</guid>
       <description>里面主要涉及到while，for循环，if..else判断 代码如下: &amp;lsquo;&amp;lt; fage = False mage =False bage=False father_age = 42 mather_age=41 boy_age=15 print(&amp;ldquo;Let&amp;rsquo;s guess the age!&amp;rdquo;) while fage == False: guess_father =int(input(&amp;rsquo;\nyour guess father_age:&amp;rsquo;)) if guess_father == father_age: print(&amp;lsquo;you right!\n&amp;rsquo;) fage = True else: print(&amp;rsquo;\nyour is error!&amp;rsquo;) if guess_father &amp;lt; father_age: small = father_age - guess_father print(&amp;lsquo;maybe is small!differ:&amp;rsquo;, small) elif guess_father &amp;gt; father_age: big =guess_father - father_age print(&amp;lsquo;maybe is big!differ:&amp;rsquo;, big) while mage == False: guess_mather =int(input(&amp;rsquo;\nyour guess mather_age:&amp;rsquo;)) if guess_mather == mather_age: print(&amp;lsquo;you right!</description>
     </item>
     
     <item>
       <title>Python 爬取内容转存 TXT</title>
-      <link>https://xxyit.github.io/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</link>
+      <link>https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</link>
       <pubDate>Sat, 26 Mar 2022 11:26:30 +0800</pubDate>
       
-      <guid>https://xxyit.github.io/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</guid>
+      <guid>https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</guid>
       <description>需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库: &amp;lsquo;&amp;lt; from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver&amp;gt;&amp;rsquo;
 以下是主体部分: &amp;lsquo;&amp;lt; env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&amp;lsquo;usd_hlfile_path&amp;rsquo;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&amp;lsquo;rmb_hlfile_path&amp;rsquo;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&amp;lsquo;chromedriver_path&amp;rsquo;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver)&amp;gt;&amp;rsquo; &amp;lsquo;&amp;lt; chrome_options = Options() chrome_options.add_argument(&amp;rsquo;&amp;ndash;no-sandbox&amp;rsquo;) chrome_options.add_argument(&amp;rsquo;&amp;ndash;disable-dev-shm-usage&amp;rsquo;) chrome_options.add_argument(&amp;rsquo;&amp;ndash;headless&amp;rsquo;) driver = webdriver.Chrome(options=chrome_options)&amp;gt;&amp;rsquo; &amp;lsquo;&amp;lt; #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&amp;ldquo;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&amp;quot;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &amp;lsquo;//[@id=&amp;ldquo;main_content&amp;rdquo;]/table/tbody/tr/td/table/tbody&amp;rsquo;) print(hl.text) print(&amp;lsquo;ok&amp;rsquo;) except Exception as e: print(&amp;rsquo;no&amp;rsquo;) time.sleep(2) hlfile=open(rmbtxt,&amp;lsquo;w+&amp;rsquo;,encoding=&amp;lsquo;utf8&amp;rsquo;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.</description>
     </item>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://xxyit.github.io/post/creating-a-new-theme/</link>
+      <link>https://www.ggood.xyz/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/creating-a-new-theme/</guid>
+      <guid>https://www.ggood.xyz/post/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://xxyit.github.io/post/goisforlovers/</link>
+      <link>https://www.ggood.xyz/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/goisforlovers/</guid>
+      <guid>https://www.ggood.xyz/post/goisforlovers/</guid>
       <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
 This document is a brief primer on using Go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://xxyit.github.io/post/hugoisforlovers/</link>
+      <link>https://www.ggood.xyz/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/hugoisforlovers/</guid>
+      <guid>https://www.ggood.xyz/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
@@ -61,10 +61,10 @@ Follow the following steps:
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>https://xxyit.github.io/post/migrate-from-jekyll/</link>
+      <link>https://www.ggood.xyz/post/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/migrate-from-jekyll/</guid>
+      <guid>https://www.ggood.xyz/post/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
@@ -72,82 +72,82 @@ Follow the following steps:
     
     <item>
       <title>Test 9</title>
-      <link>https://xxyit.github.io/post/test-9/</link>
+      <link>https://www.ggood.xyz/post/test-9/</link>
       <pubDate>Thu, 09 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-9/</guid>
+      <guid>https://www.ggood.xyz/post/test-9/</guid>
       <description>Test 9</description>
     </item>
     
     <item>
       <title>Test 8</title>
-      <link>https://xxyit.github.io/post/test-8/</link>
+      <link>https://www.ggood.xyz/post/test-8/</link>
       <pubDate>Wed, 08 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-8/</guid>
+      <guid>https://www.ggood.xyz/post/test-8/</guid>
       <description>Test 8</description>
     </item>
     
     <item>
       <title>Test 7</title>
-      <link>https://xxyit.github.io/post/test-7/</link>
+      <link>https://www.ggood.xyz/post/test-7/</link>
       <pubDate>Tue, 07 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-7/</guid>
+      <guid>https://www.ggood.xyz/post/test-7/</guid>
       <description>Test 7</description>
     </item>
     
     <item>
       <title>Test 6</title>
-      <link>https://xxyit.github.io/post/test-6/</link>
+      <link>https://www.ggood.xyz/post/test-6/</link>
       <pubDate>Mon, 06 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-6/</guid>
+      <guid>https://www.ggood.xyz/post/test-6/</guid>
       <description>Test 6</description>
     </item>
     
     <item>
       <title>Test 5</title>
-      <link>https://xxyit.github.io/post/test-5/</link>
+      <link>https://www.ggood.xyz/post/test-5/</link>
       <pubDate>Sun, 05 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-5/</guid>
+      <guid>https://www.ggood.xyz/post/test-5/</guid>
       <description>Test 5</description>
     </item>
     
     <item>
       <title>Test 4</title>
-      <link>https://xxyit.github.io/post/test-4/</link>
+      <link>https://www.ggood.xyz/post/test-4/</link>
       <pubDate>Sat, 04 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-4/</guid>
+      <guid>https://www.ggood.xyz/post/test-4/</guid>
       <description>Test 4</description>
     </item>
     
     <item>
       <title>Test 3</title>
-      <link>https://xxyit.github.io/post/test-3/</link>
+      <link>https://www.ggood.xyz/post/test-3/</link>
       <pubDate>Fri, 03 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-3/</guid>
+      <guid>https://www.ggood.xyz/post/test-3/</guid>
       <description>Test 3</description>
     </item>
     
     <item>
       <title>Test 2</title>
-      <link>https://xxyit.github.io/post/test-2/</link>
+      <link>https://www.ggood.xyz/post/test-2/</link>
       <pubDate>Thu, 02 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-2/</guid>
+      <guid>https://www.ggood.xyz/post/test-2/</guid>
       <description>Test 2</description>
     </item>
     
     <item>
       <title>Test 1</title>
-      <link>https://xxyit.github.io/post/test-1/</link>
+      <link>https://www.ggood.xyz/post/test-1/</link>
       <pubDate>Wed, 01 Jan 1012 00:00:00 +0000</pubDate>
       
-      <guid>https://xxyit.github.io/post/test-1/</guid>
+      <guid>https://www.ggood.xyz/post/test-1/</guid>
       <description>Test 1 I am referencing a footnote1
 1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;{linenos=inline}&amp;#34;) 7} 1 2 3 4 5 6 7  package main  import &amp;#34;fmt&amp;#34;  func main() {  fmt.Println(&amp;#34;{linenos=table}&amp;#34;) }   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dictum tortor.Morbi laoreet enim id sem euismod lobortis. Donec quam libero, bibendum non cursus vitae, dictum vel eros.   I am the footnote&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
