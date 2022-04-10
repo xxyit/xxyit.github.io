@@ -13,7 +13,7 @@
       
       <guid>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</guid>
       <description>里面主要涉及到while，for循环，if..else判断 代码如下:
- fage = False mage =False bage=False father_age = 42 mather_age=41 boy_age=15 print(&amp;#34;Let&amp;#39;s guess the age!&amp;#34;) while fage == False: #当fage这个值等于False时，进入循环 guess_father =int(input(&amp;#39;\nyour guess father_age:&amp;#39;)) #输入你所猜测的父亲年龄 if guess_father == father_age: print(&amp;#39;you right!\n&amp;#39;) fage = True else: print(&amp;#39;\nyour is error!&amp;#39;) if guess_father &amp;lt; father_age: small = father_age - guess_father #当你猜测的数比答案小时，用答案减去猜测数等于相差数值 print(&amp;#39;maybe is small!differ:&amp;#39;, small) elif guess_father &amp;gt; father_age: big =guess_father - father_age print(&amp;#39;maybe is big!differ:&amp;#39;, big) while mage == False: guess_mather =int(input(&amp;#39;\nyour guess mather_age:&amp;#39;)) if guess_mather == mather_age: print(&amp;#39;you right!</description>
+ fage = False  mage =False  bage=False  father_age = 42  mather_age=41  boy_age=15  print(&amp;#34;Let&amp;#39;s guess the age!&amp;#34;)  while fage == False: #当fage这个值等于False时，进入循环  guess_father =int(input(&amp;#39;\nyour guess father_age:&amp;#39;)) #输入你所猜测的父亲年龄  if guess_father == father_age:  print(&amp;#39;you right!\n&amp;#39;)  fage = True  else:  print(&amp;#39;\nyour is error!&amp;#39;)  if guess_father &amp;lt; father_age:  small = father_age - guess_father #当你猜测的数比答案小时，用答案减去猜测数等于相差数值  print(&amp;#39;maybe is small!differ:&amp;#39;, small)  elif guess_father &amp;gt; father_age:  big =guess_father - father_age  print(&amp;#39;maybe is big!</description>
     </item>
     
   </channel>

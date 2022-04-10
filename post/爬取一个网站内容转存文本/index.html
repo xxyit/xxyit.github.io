@@ -14,13 +14,13 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Python 爬取内容转存 TXT"/>
 <meta name="twitter:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库,需要用到selenium库对网页元素进行操作；安装chrome浏览器，下载并解压相对应版本的谷歌驱动：
- from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
- env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&#39;usd_hlfile_path&#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&#39;rmb_hlfile_path&#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&#39;chromedriver_path&#39;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver) chrome_options = Options() chrome_options.add_argument(&#39;--no-sandbox&#39;) chrome_options.add_argument(&#39;--disable-dev-shm-usage&#39;) chrome_options.add_argument(&#39;--headless&#39;) driver = webdriver.Chrome(options=chrome_options) #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&#34;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &#39;//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;) print(hl.text) print(&#39;ok&#39;) except Exception as e: print(&#39;no&#39;) time.sleep(2) hlfile=open(rmbtxt,&#39;w&#43;&#39;,encoding=&#39;utf8&#39;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&#34;) time."/>
+ from selenium import webdriver  import time  from selenium.webdriver.common.by import By  import os  from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
+ env_dist = os.environ # environ是在os.py中定义的一个dict environ = {}  usdtxt=env_dist.get(&#39;usd_hlfile_path&#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本  print (usdtxt)  rmbtxt=env_dist.get(&#39;rmb_hlfile_path&#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本  print (rmbtxt)  chromedriver =env_dist.get(&#39;chromedriver_path&#39;)#环境变量chromedriver_path，存放谷歌驱动的路径  print(chromedriver)   chrome_options = Options()  chrome_options.add_argument(&#39;--no-sandbox&#39;)  chrome_options.add_argument(&#39;--disable-dev-shm-usage&#39;)  chrome_options.add_argument(&#39;--headless&#39;)  driver = webdriver.Chrome(options=chrome_options)   #driver=webdriver.Chrome(executable_path=chromedriver)  driver.maximize_window()  driver."/>
 
     <meta property="og:title" content="Python 爬取内容转存 TXT" />
 <meta property="og:description" content="需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库,需要用到selenium库对网页元素进行操作；安装chrome浏览器，下载并解压相对应版本的谷歌驱动：
- from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
- env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&#39;usd_hlfile_path&#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&#39;rmb_hlfile_path&#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&#39;chromedriver_path&#39;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver) chrome_options = Options() chrome_options.add_argument(&#39;--no-sandbox&#39;) chrome_options.add_argument(&#39;--disable-dev-shm-usage&#39;) chrome_options.add_argument(&#39;--headless&#39;) driver = webdriver.Chrome(options=chrome_options) #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&#34;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &#39;//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;) print(hl.text) print(&#39;ok&#39;) except Exception as e: print(&#39;no&#39;) time.sleep(2) hlfile=open(rmbtxt,&#39;w&#43;&#39;,encoding=&#39;utf8&#39;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&#34;) time." />
+ from selenium import webdriver  import time  from selenium.webdriver.common.by import By  import os  from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
+ env_dist = os.environ # environ是在os.py中定义的一个dict environ = {}  usdtxt=env_dist.get(&#39;usd_hlfile_path&#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本  print (usdtxt)  rmbtxt=env_dist.get(&#39;rmb_hlfile_path&#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本  print (rmbtxt)  chromedriver =env_dist.get(&#39;chromedriver_path&#39;)#环境变量chromedriver_path，存放谷歌驱动的路径  print(chromedriver)   chrome_options = Options()  chrome_options.add_argument(&#39;--no-sandbox&#39;)  chrome_options.add_argument(&#39;--disable-dev-shm-usage&#39;)  chrome_options.add_argument(&#39;--headless&#39;)  driver = webdriver.Chrome(options=chrome_options)   #driver=webdriver.Chrome(executable_path=chromedriver)  driver.maximize_window()  driver." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-03-26T00:00:00+00:00" />
@@ -94,57 +94,57 @@
     <div class="post-content">
       <p>需要安装好Python环境，以下基于Python3实现，Windows10环境：
 所需Python的拓展库,需要用到selenium库对网页元素进行操作；安装chrome浏览器，下载并解压相对应版本的谷歌驱动：</p>
-<pre tabindex="0"><code>  from selenium import webdriver
-  import time
-  from selenium.webdriver.common.by import By
-  import os
-  from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver
-</code></pre><p>以下是主体部分:</p>
-<pre tabindex="0"><code>  env_dist = os.environ # environ是在os.py中定义的一个dict environ = {}
-  usdtxt=env_dist.get(&#39;usd_hlfile_path&#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本
-  print (usdtxt)
-  rmbtxt=env_dist.get(&#39;rmb_hlfile_path&#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本
-  print (rmbtxt)
-  chromedriver =env_dist.get(&#39;chromedriver_path&#39;)#环境变量chromedriver_path，存放谷歌驱动的路径
-  print(chromedriver)
-
-  chrome_options = Options()
-  chrome_options.add_argument(&#39;--no-sandbox&#39;)
-  chrome_options.add_argument(&#39;--disable-dev-shm-usage&#39;)
-  chrome_options.add_argument(&#39;--headless&#39;)
-  driver = webdriver.Chrome(options=chrome_options)
-
-  #driver=webdriver.Chrome(executable_path=chromedriver)
-  driver.maximize_window()
-  driver.get(&#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&#34;)
-  time.sleep(2)
-  try:
-      hl=driver.find_element(By.XPATH, &#39;//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;)
-      print(hl.text)
-      print(&#39;ok&#39;)
-  except Exception as e:
-      print(&#39;no&#39;)
-  time.sleep(2)
-  hlfile=open(rmbtxt,&#39;w+&#39;,encoding=&#39;utf8&#39;)
-  hlfile.write(hl.text)
-  hlfile.close()
-  #driver.close()
-  #driver=webdriver.Chrome(executable_path=chromedriver)
-  driver.maximize_window()
-  driver.get(&#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&#34;)
-  time.sleep(2)
-  try:
-      hl=driver.find_element(By.XPATH, &#39;//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;)
-      print(hl.text)
-      print(&#39;ok&#39;)
-  except Exception as e:
-      print(&#39;no&#39;)
-  time.sleep(2)
-  hlfile=open(usdtxt,&#39;w+&#39;,encoding=&#39;utf8&#39;)
-  hlfile.write(hl.text)
-  hlfile.close()
-  driver.close()
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  from selenium import webdriver
+</span></span><span style="display:flex;"><span>  import time
+</span></span><span style="display:flex;"><span>  from selenium.webdriver.common.by import By
+</span></span><span style="display:flex;"><span>  import os
+</span></span><span style="display:flex;"><span>  from selenium.webdriver.chrome.options import Options <span style="color:#960050;background-color:#1e0010">#安装</span>chrome<span style="color:#960050;background-color:#1e0010">，下载解压</span>Chromediver
+</span></span></code></pre></div><p>以下是主体部分:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  env_dist <span style="color:#f92672">=</span> os.environ <span style="color:#960050;background-color:#1e0010">#</span> environ是在os.py中定义的一个dict environ <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  usdtxt<span style="color:#f92672">=</span>env_dist.get(<span style="color:#960050;background-color:#1e0010">&#39;</span>usd_hlfile_path<span style="color:#960050;background-color:#1e0010">&#39;</span>)<span style="color:#960050;background-color:#1e0010">#环境变量</span>usd_hlfile_path<span style="color:#960050;background-color:#1e0010">，存放</span>usd汇率的路径下txt文本
+</span></span><span style="display:flex;"><span>  print (usdtxt)
+</span></span><span style="display:flex;"><span>  rmbtxt<span style="color:#f92672">=</span>env_dist.get(<span style="color:#960050;background-color:#1e0010">&#39;</span>rmb_hlfile_path<span style="color:#960050;background-color:#1e0010">&#39;</span>)<span style="color:#960050;background-color:#1e0010">#环境变量</span>rmb_hlfile_path<span style="color:#960050;background-color:#1e0010">，存放</span>rmb汇率的路径下txt文本
+</span></span><span style="display:flex;"><span>  print (rmbtxt)
+</span></span><span style="display:flex;"><span>  chromedriver <span style="color:#f92672">=</span>env_dist.get(<span style="color:#960050;background-color:#1e0010">&#39;</span>chromedriver_path<span style="color:#960050;background-color:#1e0010">&#39;</span>)<span style="color:#960050;background-color:#1e0010">#环境变量</span>chromedriver_path<span style="color:#960050;background-color:#1e0010">，存放谷歌驱动的路径</span>
+</span></span><span style="display:flex;"><span>  print(chromedriver)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  chrome_options <span style="color:#f92672">=</span> Options()
+</span></span><span style="display:flex;"><span>  chrome_options.add_argument(<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">--</span>no<span style="color:#f92672">-</span>sandbox<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  chrome_options.add_argument(<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">--</span>disable<span style="color:#f92672">-</span>dev<span style="color:#f92672">-</span>shm<span style="color:#f92672">-</span>usage<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  chrome_options.add_argument(<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">--</span>headless<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  driver <span style="color:#f92672">=</span> webdriver.Chrome(options<span style="color:#f92672">=</span>chrome_options)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#driver=webdriver.Chrome(executable_path=chromedriver)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  driver.maximize_window()
+</span></span><span style="display:flex;"><span>  driver.get(<span style="color:#e6db74">&#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&#34;</span>)
+</span></span><span style="display:flex;"><span>  time.sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  try:
+</span></span><span style="display:flex;"><span>      hl<span style="color:#f92672">=</span>driver.find_element(By.XPATH, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#75715e">//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      print(hl.text)
+</span></span><span style="display:flex;"><span>      print(<span style="color:#960050;background-color:#1e0010">&#39;</span>ok<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  except Exception as e:
+</span></span><span style="display:flex;"><span>      print(<span style="color:#960050;background-color:#1e0010">&#39;</span>no<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  time.sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  hlfile<span style="color:#f92672">=</span>open(rmbtxt,<span style="color:#960050;background-color:#1e0010">&#39;</span>w<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>,encoding<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>utf8<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  hlfile.write(hl.text)
+</span></span><span style="display:flex;"><span>  hlfile.close()
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#driver.close()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">#driver=webdriver.Chrome(executable_path=chromedriver)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  driver.maximize_window()
+</span></span><span style="display:flex;"><span>  driver.get(<span style="color:#e6db74">&#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&#34;</span>)
+</span></span><span style="display:flex;"><span>  time.sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  try:
+</span></span><span style="display:flex;"><span>      hl<span style="color:#f92672">=</span>driver.find_element(By.XPATH, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#75715e">//*[@id=&#34;main_content&#34;]/table/tbody/tr/td/table/tbody&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      print(hl.text)
+</span></span><span style="display:flex;"><span>      print(<span style="color:#960050;background-color:#1e0010">&#39;</span>ok<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  except Exception as e:
+</span></span><span style="display:flex;"><span>      print(<span style="color:#960050;background-color:#1e0010">&#39;</span>no<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  time.sleep(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>  hlfile<span style="color:#f92672">=</span>open(usdtxt,<span style="color:#960050;background-color:#1e0010">&#39;</span>w<span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">&#39;</span>,encoding<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">&#39;</span>utf8<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>  hlfile.write(hl.text)
+</span></span><span style="display:flex;"><span>  hlfile.close()
+</span></span><span style="display:flex;"><span>  driver.close()
+</span></span></code></pre></div>
     </div>
     <div class="post-footer">
       

@@ -5,14 +5,41 @@
     <link>https://www.ggood.xyz/</link>
     <description>Recent content on 大熊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ggood.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ggood.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python中所使用的while、for循环</title>
+      <link>https://www.ggood.xyz/post/python%E4%B8%AD%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84whilefor%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/python%E4%B8%AD%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84whilefor%E5%BE%AA%E7%8E%AF/</guid>
+      <description>##while循环语句
+while 判断条件(condition)：  执行语句(statements)…… 当执行到while语句会判断其设定的条件，符合就会进入循环，直到判断其不符合才进入下一步程序。
+##for循环语句 for 循环可以遍历任何可迭代对象，如一个列表或者一个字符串。
+for循环的一般格式如下：
+for &amp;lt;variable&amp;gt; in &amp;lt;sequence&amp;gt;:  &amp;lt;statements&amp;gt; else:  &amp;lt;statements&amp;gt; 执行for循环，会遍历中的内容，直至完成结束
+&amp;gt;&amp;gt;&amp;gt;languages = [&amp;#34;C&amp;#34;, &amp;#34;C++&amp;#34;, &amp;#34;Perl&amp;#34;, &amp;#34;Python&amp;#34;] &amp;gt;&amp;gt;&amp;gt; for x in languages: ... print (x) ... C C++ Perl Python &amp;gt;&amp;gt;&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Python的if else判断以及continue、break用法</title>
+      <link>https://www.ggood.xyz/post/python%E7%9A%84if-else%E5%88%A4%E6%96%AD%E4%BB%A5%E5%8F%8Acontinuebreak%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/python%E7%9A%84if-else%E5%88%A4%E6%96%AD%E4%BB%A5%E5%8F%8Acontinuebreak%E7%94%A8%E6%B3%95/</guid>
+      <description>##if else语句 语句的意思是如果满足此条件则执行，否则执行另一个
+ if (condition) {  当条件为 true 时执行的代码 } else {  当条件不为 true 时执行的代码 } 可嵌套使用，可以结合while、for循环使用
+sites = [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;,&amp;#34;C&amp;#34;,&amp;#34;D&amp;#34;] for site in sites:  if site == &amp;#34;B&amp;#34;:  print(&amp;#34;B!&amp;#34;)  break  print(&amp;#34;循环数据 &amp;#34; + site) else:  print(&amp;#34;没有循环数据!&amp;#34;) print(&amp;#34;完成循环!&amp;#34;) ##continue、break用法 break 语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。
+continue 语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
+n = 5 while n &amp;gt; 0:  n -= 1  if n == 2:  break  print(n) print(&amp;#39;循环结束。&amp;#39;)  输出结果为：  4 3 循环结束。 n = 5 while n &amp;gt; 0:  n -= 1  if n == 2:  continue  print(n) print(&amp;#39;循环结束。&amp;#39;)   输出结果为：  4 3 1 0 循环结束。 </description>
+    </item>
+    
     <item>
       <title>前端的HTML的结构认识</title>
       <link>https://www.ggood.xyz/post/%E5%89%8D%E7%AB%AF%E7%9A%84html%E7%9A%84%E7%BB%93%E6%9E%84%E8%AE%A4%E8%AF%86/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.ggood.xyz/post/%E5%89%8D%E7%AB%AF%E7%9A%84html%E7%9A%84%E7%BB%93%E6%9E%84%E8%AE%A4%E8%AF%86/</guid>
-      <description>HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; #这里主要是声名HTML的类型 &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; #从这里开始包含HTML页面内容  &amp;lt;head&amp;gt; #头部结构，里面可以有title、meta、link等内容  &amp;lt;/head&amp;gt; #闭环head  &amp;lt;body&amp;gt; #主体，以下内容就是浏览器页面显示的东西  &amp;lt;/body&amp;gt; #闭环head &amp;lt;/html&amp;gt; #闭环HTML HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应</description>
+      <description>HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--这里主要是声名HTML的类型--&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--从这里开始包含HTML页面内容--&amp;gt;  &amp;lt;head&amp;gt; &amp;lt;!--头部结构，里面可以有title、meta、link等内容--&amp;gt;  &amp;lt;/head&amp;gt; &amp;lt;!--闭环head--&amp;gt;  &amp;lt;body&amp;gt; &amp;lt;!--主体，以下内容就是浏览器页面显示的东西--&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;!--闭环head--&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!--闭环HTML--&amp;gt; HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应</description>
     </item>
     
     <item>
@@ -31,7 +58,7 @@
       
       <guid>https://www.ggood.xyz/post/%E7%AE%80%E7%AE%80%E5%8D%95%E5%8D%95%E7%9A%84%E4%B8%80%E4%B8%AA%E7%8C%9C%E6%95%B0%E5%AD%97%E5%8A%9F%E8%83%BD/</guid>
       <description>里面主要涉及到while，for循环，if..else判断 代码如下:
- fage = False mage =False bage=False father_age = 42 mather_age=41 boy_age=15 print(&amp;#34;Let&amp;#39;s guess the age!&amp;#34;) while fage == False: #当fage这个值等于False时，进入循环 guess_father =int(input(&amp;#39;\nyour guess father_age:&amp;#39;)) #输入你所猜测的父亲年龄 if guess_father == father_age: print(&amp;#39;you right!\n&amp;#39;) fage = True else: print(&amp;#39;\nyour is error!&amp;#39;) if guess_father &amp;lt; father_age: small = father_age - guess_father #当你猜测的数比答案小时，用答案减去猜测数等于相差数值 print(&amp;#39;maybe is small!differ:&amp;#39;, small) elif guess_father &amp;gt; father_age: big =guess_father - father_age print(&amp;#39;maybe is big!differ:&amp;#39;, big) while mage == False: guess_mather =int(input(&amp;#39;\nyour guess mather_age:&amp;#39;)) if guess_mather == mather_age: print(&amp;#39;you right!</description>
+ fage = False  mage =False  bage=False  father_age = 42  mather_age=41  boy_age=15  print(&amp;#34;Let&amp;#39;s guess the age!&amp;#34;)  while fage == False: #当fage这个值等于False时，进入循环  guess_father =int(input(&amp;#39;\nyour guess father_age:&amp;#39;)) #输入你所猜测的父亲年龄  if guess_father == father_age:  print(&amp;#39;you right!\n&amp;#39;)  fage = True  else:  print(&amp;#39;\nyour is error!&amp;#39;)  if guess_father &amp;lt; father_age:  small = father_age - guess_father #当你猜测的数比答案小时，用答案减去猜测数等于相差数值  print(&amp;#39;maybe is small!differ:&amp;#39;, small)  elif guess_father &amp;gt; father_age:  big =guess_father - father_age  print(&amp;#39;maybe is big!</description>
     </item>
     
     <item>
@@ -41,8 +68,8 @@
       
       <guid>https://www.ggood.xyz/post/%E7%88%AC%E5%8F%96%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99%E5%86%85%E5%AE%B9%E8%BD%AC%E5%AD%98%E6%96%87%E6%9C%AC/</guid>
       <description>需要安装好Python环境，以下基于Python3实现，Windows10环境： 所需Python的拓展库,需要用到selenium库对网页元素进行操作；安装chrome浏览器，下载并解压相对应版本的谷歌驱动：
- from selenium import webdriver import time from selenium.webdriver.common.by import By import os from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
- env_dist = os.environ # environ是在os.py中定义的一个dict environ = {} usdtxt=env_dist.get(&amp;#39;usd_hlfile_path&amp;#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本 print (usdtxt) rmbtxt=env_dist.get(&amp;#39;rmb_hlfile_path&amp;#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本 print (rmbtxt) chromedriver =env_dist.get(&amp;#39;chromedriver_path&amp;#39;)#环境变量chromedriver_path，存放谷歌驱动的路径 print(chromedriver) chrome_options = Options() chrome_options.add_argument(&amp;#39;--no-sandbox&amp;#39;) chrome_options.add_argument(&amp;#39;--disable-dev-shm-usage&amp;#39;) chrome_options.add_argument(&amp;#39;--headless&amp;#39;) driver = webdriver.Chrome(options=chrome_options) #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&amp;#34;https://huobiduihuan.bmcx.com/CNY__huobiduihuan/&amp;#34;) time.sleep(2) try: hl=driver.find_element(By.XPATH, &amp;#39;//*[@id=&amp;#34;main_content&amp;#34;]/table/tbody/tr/td/table/tbody&amp;#39;) print(hl.text) print(&amp;#39;ok&amp;#39;) except Exception as e: print(&amp;#39;no&amp;#39;) time.sleep(2) hlfile=open(rmbtxt,&amp;#39;w+&amp;#39;,encoding=&amp;#39;utf8&amp;#39;) hlfile.write(hl.text) hlfile.close() #driver.close() #driver=webdriver.Chrome(executable_path=chromedriver) driver.maximize_window() driver.get(&amp;#34;https://huobiduihuan.bmcx.com/USD__huobiduihuan/&amp;#34;) time.</description>
+ from selenium import webdriver  import time  from selenium.webdriver.common.by import By  import os  from selenium.webdriver.chrome.options import Options #安装chrome，下载解压Chromediver 以下是主体部分:
+ env_dist = os.environ # environ是在os.py中定义的一个dict environ = {}  usdtxt=env_dist.get(&amp;#39;usd_hlfile_path&amp;#39;)#环境变量usd_hlfile_path，存放usd汇率的路径下txt文本  print (usdtxt)  rmbtxt=env_dist.get(&amp;#39;rmb_hlfile_path&amp;#39;)#环境变量rmb_hlfile_path，存放rmb汇率的路径下txt文本  print (rmbtxt)  chromedriver =env_dist.get(&amp;#39;chromedriver_path&amp;#39;)#环境变量chromedriver_path，存放谷歌驱动的路径  print(chromedriver)   chrome_options = Options()  chrome_options.add_argument(&amp;#39;--no-sandbox&amp;#39;)  chrome_options.add_argument(&amp;#39;--disable-dev-shm-usage&amp;#39;)  chrome_options.add_argument(&amp;#39;--headless&amp;#39;)  driver = webdriver.Chrome(options=chrome_options)   #driver=webdriver.Chrome(executable_path=chromedriver)  driver.maximize_window()  driver.</description>
     </item>
     
     <item>
@@ -88,24 +115,6 @@ Follow the following steps:
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Test 7</title>
-      <link>https://www.ggood.xyz/post/test-7/</link>
-      <pubDate>Tue, 07 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ggood.xyz/post/test-7/</guid>
-      <description>Test 7</description>
-    </item>
-    
-    <item>
-      <title>Test 6</title>
-      <link>https://www.ggood.xyz/post/test-6/</link>
-      <pubDate>Mon, 06 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ggood.xyz/post/test-6/</guid>
-      <description>Test 6</description>
     </item>
     
     <item>
