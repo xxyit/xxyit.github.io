@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>HTML中基本的标签（1） // 大熊的博客</title>
+    <title>HTML中基本的标签（2） // 大熊的博客</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.95.0" />
@@ -12,15 +12,23 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HTML中基本的标签（1）"/>
-<meta name="twitter:description" content="HTML头部中使用的主要标签 可以添加在头部区域的元素标签为: , , , , , 和 。
-   &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;/head&gt;   meta标签描述了一些基本的元数据。
- "/>
+<meta name="twitter:title" content="HTML中基本的标签（2）"/>
+<meta name="twitter:description" content="HTML头部中使用的主要标签 可以添加在头部区域的元素标签为: &lt;title&gt; , &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。
+&lt;title&gt; &lt;title&gt; 标签定义了不同文档的标题
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;文档标题&lt;/title&gt; &lt;/head&gt; &lt;base&gt; &lt;base&gt; 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接
+&lt;head&gt; &lt;base href=&#34;http://www.baidu.com/&#34; target=&#34;_blank&#34;&gt; &lt;/head&gt; &lt;link&gt; &lt;link&gt; 标签定义了文档与外部资源之间的关系。 &lt;link&gt; 标签通常用于链接到样式表
+&lt;head&gt; &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;mystyle.css&#34;&gt; &lt;/head&gt; &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;/head&gt; &lt;style&gt; &lt;style&gt; 标签定义了HTML文档的样式文件引用地址 在&lt;style&gt; 元素中你也可以直接添加样式来渲染 HTML 文档
+&lt;head&gt; &lt;style type=&#34;text/css&#34;&gt; body {background-color:yellow} p {color:blue} &lt;/style&gt; &lt;/head&gt; &lt;meta&gt; meta标签描述了一些基本的元数据。 &lt;meta&gt; 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。
+为搜索引擎定义关键词:  &lt;meta name=&#34;keywords&#34; content=&#34;HTML, CSS, XML, XHTML, JavaScript&#34;&gt; 为网页定义描述内容:  &lt;meta name=&#34;description&#34; content=&#34;需要描述的内容&#34;&gt; 定义网页作者:  &lt;meta name=&#34;author&#34; content=&#34;Jack&#34;&gt; 每30秒钟刷新当前页面:  &lt;meta http-equiv=&#34;refresh&#34; content=&#34;30&#34;&gt; &lt;script&gt; &lt;script&gt;标签用于加载脚本文件，如： JavaScript。"/>
 
-    <meta property="og:title" content="HTML中基本的标签（1）" />
-<meta property="og:description" content="HTML头部中使用的主要标签 可以添加在头部区域的元素标签为: , , , , , 和 。
-   &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;/head&gt;   meta标签描述了一些基本的元数据。
- " />
+    <meta property="og:title" content="HTML中基本的标签（2）" />
+<meta property="og:description" content="HTML头部中使用的主要标签 可以添加在头部区域的元素标签为: &lt;title&gt; , &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。
+&lt;title&gt; &lt;title&gt; 标签定义了不同文档的标题
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;文档标题&lt;/title&gt; &lt;/head&gt; &lt;base&gt; &lt;base&gt; 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接
+&lt;head&gt; &lt;base href=&#34;http://www.baidu.com/&#34; target=&#34;_blank&#34;&gt; &lt;/head&gt; &lt;link&gt; &lt;link&gt; 标签定义了文档与外部资源之间的关系。 &lt;link&gt; 标签通常用于链接到样式表
+&lt;head&gt; &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;mystyle.css&#34;&gt; &lt;/head&gt; &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;/head&gt; &lt;style&gt; &lt;style&gt; 标签定义了HTML文档的样式文件引用地址 在&lt;style&gt; 元素中你也可以直接添加样式来渲染 HTML 文档
+&lt;head&gt; &lt;style type=&#34;text/css&#34;&gt; body {background-color:yellow} p {color:blue} &lt;/style&gt; &lt;/head&gt; &lt;meta&gt; meta标签描述了一些基本的元数据。 &lt;meta&gt; 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。
+为搜索引擎定义关键词:  &lt;meta name=&#34;keywords&#34; content=&#34;HTML, CSS, XML, XHTML, JavaScript&#34;&gt; 为网页定义描述内容:  &lt;meta name=&#34;description&#34; content=&#34;需要描述的内容&#34;&gt; 定义网页作者:  &lt;meta name=&#34;author&#34; content=&#34;Jack&#34;&gt; 每30秒钟刷新当前页面:  &lt;meta http-equiv=&#34;refresh&#34; content=&#34;30&#34;&gt; &lt;script&gt; &lt;script&gt;标签用于加载脚本文件，如： JavaScript。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE2/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-03T00:00:00+00:00" />
@@ -65,7 +73,7 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">HTML中基本的标签（1）</h1>
+      <h1 class ="post-title">HTML中基本的标签（2）</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -93,29 +101,55 @@
     </header>
     <div class="post-content">
       <h2 id="html头部中使用的主要标签">HTML头部中使用的主要标签</h2>
-<p>可以添加在头部区域的元素标签为: <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted --> 和 <!-- raw HTML omitted -->。</p>
-<h2 id="title"><!-- raw HTML omitted --></h2>
-<!-- raw HTML omitted -->
-<h2 id="base"><!-- raw HTML omitted --></h2>
-<!-- raw HTML omitted -->
-<h2 id="link"><!-- raw HTML omitted --></h2>
-<!-- raw HTML omitted -->
+<p>可以添加在头部区域的元素标签为: <code>&lt;title&gt; , &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。</code></p>
+<h2 id="title"><code>&lt;title&gt;</code></h2>
+<p><code>&lt;title&gt;</code> 标签定义了不同文档的标题</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;!</span>DOCTYPE html<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>html<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>head<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>meta charset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>title<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">文档标题</span><span style="color:#f92672">&lt;/</span>title<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>head<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h2 id="base"><code>&lt;base&gt;</code></h2>
+<p><code>&lt;base&gt;</code> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>head<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>base href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.baidu.com/&#34;</span> target<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>head<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h2 id="link"><code>&lt;link&gt;</code></h2>
+<p><code>&lt;link&gt;</code> 标签定义了文档与外部资源之间的关系。
+<code>&lt;link&gt;</code> 标签通常用于链接到样式表</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>head<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>link rel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mystyle.css&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>head<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>head<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>link rel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shortcut icon&#34;</span> href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;图片url&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>head<span style="color:#f92672">&gt;</span>
-</span></span></code></pre></div><h2 id="style"><!-- raw HTML omitted --></h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="meta"><!-- raw HTML omitted --></h2>
-<p>meta标签描述了一些基本的元数据。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="script"><!-- raw HTML omitted --></h2>
-<!-- raw HTML omitted -->
+</span></span></code></pre></div><h2 id="style"><code>&lt;style&gt;</code></h2>
+<p><code>&lt;style&gt;</code> 标签定义了HTML文档的样式文件引用地址
+在<code>&lt;style&gt;</code> 元素中你也可以直接添加样式来渲染 HTML 文档</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>head<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>style type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>body {background<span style="color:#f92672">-</span>color:yellow}
+</span></span><span style="display:flex;"><span>p {color:blue}
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>style<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/</span>head<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h2 id="meta"><code>&lt;meta&gt;</code></h2>
+<p>meta标签描述了一些基本的元数据。
+<code>&lt;meta&gt;</code> 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">为搜索引擎定义关键词</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>meta name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;keywords&#34;</span> content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HTML, CSS, XML, XHTML, JavaScript&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">为网页定义描述内容</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>meta name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;description&#34;</span> content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;需要描述的内容&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">定义网页作者</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>meta name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;author&#34;</span> content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Jack&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">每</span><span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">秒钟刷新当前页面</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>meta http<span style="color:#f92672">-</span>equiv<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;refresh&#34;</span> content<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;30&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><h2 id="script"><code>&lt;script&gt;</code></h2>
+<p><code>&lt;script&gt;</code>标签用于加载脚本文件，如： JavaScript。</p>
 
     </div>
     <div class="post-footer">

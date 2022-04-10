@@ -13,16 +13,24 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="HTML中基本的标签（1）"/>
-<meta name="twitter:description" content="头部 可以添加在头部区域的元素标签为: , , , , , 和 。
-段落 段落是通过 标签定义的
-&lt;p&gt;这是一个段落 &lt;/p&gt; &lt;p&gt;这是另一个段落&lt;/p&gt; 结束标签 拆行 在不产生一个新段落的情况下进行换行（新行），使用 标签
+<meta name="twitter:description" content="头部 head 元素包含了所有的头部标签元素。在 head 元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。
+可以添加在头部区域的元素标签为: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。
+&lt;title&gt; 标签定义了不同文档的标题。
+&lt;title&gt; 在 HTML/XHTML 文档中是必须的。
+段落 段落是通过 &lt;p&gt; 标签定义的
+&lt;p&gt;这是一个段落 &lt;/p&gt; &lt;p&gt;这是另一个段落&lt;/p&gt; 结束标签 &lt;/p&gt; 是块级元素 即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来,但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。
+拆行 在不产生一个新段落的情况下进行换行（新行），使用 &lt;br&gt; 标签
 &lt;p&gt;这个&lt;br&gt;段落&lt;br&gt;分行&lt;/p&gt; 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。
 HTML文档 &lt;!doctype HTML&gt; &lt;html&gt; &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;title&gt;这是一个带图片的标签&lt;/title&gt; &lt;/head&gt; &lt;body&gt; …… …… …… &lt;/body&gt; &lt;/html&gt; "/>
 
     <meta property="og:title" content="HTML中基本的标签（1）" />
-<meta property="og:description" content="头部 可以添加在头部区域的元素标签为: , , , , , 和 。
-段落 段落是通过 标签定义的
-&lt;p&gt;这是一个段落 &lt;/p&gt; &lt;p&gt;这是另一个段落&lt;/p&gt; 结束标签 拆行 在不产生一个新段落的情况下进行换行（新行），使用 标签
+<meta property="og:description" content="头部 head 元素包含了所有的头部标签元素。在 head 元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。
+可以添加在头部区域的元素标签为: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。
+&lt;title&gt; 标签定义了不同文档的标题。
+&lt;title&gt; 在 HTML/XHTML 文档中是必须的。
+段落 段落是通过 &lt;p&gt; 标签定义的
+&lt;p&gt;这是一个段落 &lt;/p&gt; &lt;p&gt;这是另一个段落&lt;/p&gt; 结束标签 &lt;/p&gt; 是块级元素 即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来,但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。
+拆行 在不产生一个新段落的情况下进行换行（新行），使用 &lt;br&gt; 标签
 &lt;p&gt;这个&lt;br&gt;段落&lt;br&gt;分行&lt;/p&gt; 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。
 HTML文档 &lt;!doctype HTML&gt; &lt;html&gt; &lt;head&gt; &lt;link rel=&#34;shortcut icon&#34; href=&#34;图片url&#34;&gt; &lt;title&gt;这是一个带图片的标签&lt;/title&gt; &lt;/head&gt; &lt;body&gt; …… …… …… &lt;/body&gt; &lt;/html&gt; " />
 <meta property="og:type" content="article" />
@@ -97,18 +105,19 @@ HTML文档 &lt;!doctype HTML&gt; &lt;html&gt; &lt;head&gt; &lt;link rel=&#34;sho
     </header>
     <div class="post-content">
       <h2 id="头部">头部</h2>
-<!-- raw HTML omitted -->
-<p>可以添加在头部区域的元素标签为: <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted --> 和 <!-- raw HTML omitted -->。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>head 元素包含了所有的头部标签元素。在 head 元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。</p>
+<p>可以添加在头部区域的元素标签为: <code>&lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;。</code></p>
+<p><code>&lt;title&gt;</code> 标签定义了不同文档的标题。</p>
+<p><code>&lt;title&gt;</code> 在 HTML/XHTML 文档中是必须的。</p>
 <h2 id="段落">段落</h2>
-<p>段落是通过 <!-- raw HTML omitted --> 标签定义的</p>
+<p>段落是通过 <code>&lt;p&gt;</code> 标签定义的</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>p<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">这是一个段落</span> <span style="color:#f92672">&lt;/</span>p<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>p<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">这是另一个段落</span><span style="color:#f92672">&lt;/</span>p<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div><h2 id="结束标签">结束标签</h2>
-<!-- raw HTML omitted -->
+<p><code>&lt;/p&gt;</code> 是块级元素
+即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来,但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。</p>
 <h2 id="拆行">拆行</h2>
-<p>在不产生一个新段落的情况下进行换行（新行），使用 <!-- raw HTML omitted --> 标签</p>
+<p>在不产生一个新段落的情况下进行换行（新行），使用 <code>&lt;br&gt;</code> 标签</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>p<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">这个</span><span style="color:#f92672">&lt;</span>br<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">段落</span><span style="color:#f92672">&lt;</span>br<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">分行</span><span style="color:#f92672">&lt;/</span>p<span style="color:#f92672">&gt;</span>
 </span></span></code></pre></div><p><!-- raw HTML omitted --> 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。</p>
 <h2 id="html文档">HTML文档</h2>
