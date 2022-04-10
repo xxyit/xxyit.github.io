@@ -5,7 +5,31 @@
     <link>https://www.ggood.xyz/post/</link>
     <description>Recent content in Posts on 大熊的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ggood.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ggood.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML中基本的标签（1）</title>
+      <link>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE2/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE2/</guid>
+      <description>HTML头部中使用的主要标签 可以添加在头部区域的元素标签为: , , , , , 和 。
+   &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; href=&amp;#34;图片url&amp;#34;&amp;gt; &amp;lt;/head&amp;gt;   meta标签描述了一些基本的元数据。
+ </description>
+    </item>
+    
+    <item>
+      <title>HTML中基本的标签（1）</title>
+      <link>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE1/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE1/</guid>
+      <description>头部 可以添加在头部区域的元素标签为: , , , , , 和 。
+段落 段落是通过 标签定义的
+&amp;lt;p&amp;gt;这是一个段落 &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;这是另一个段落&amp;lt;/p&amp;gt; 结束标签 拆行 在不产生一个新段落的情况下进行换行（新行），使用 标签
+&amp;lt;p&amp;gt;这个&amp;lt;br&amp;gt;段落&amp;lt;br&amp;gt;分行&amp;lt;/p&amp;gt; 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签。
+HTML文档 &amp;lt;!doctype HTML&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; href=&amp;#34;图片url&amp;#34;&amp;gt; &amp;lt;title&amp;gt;这是一个带图片的标签&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; …… …… …… &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; </description>
+    </item>
+    
     <item>
       <title>Python中所使用的while、for循环</title>
       <link>https://www.ggood.xyz/post/python%E4%B8%AD%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84whilefor%E5%BE%AA%E7%8E%AF/</link>
@@ -39,7 +63,9 @@ n = 5 while n &amp;gt; 0:  n -= 1  if n == 2:  break  print(n) print(&amp;#39;�
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.ggood.xyz/post/%E5%89%8D%E7%AB%AF%E7%9A%84html%E7%9A%84%E7%BB%93%E6%9E%84%E8%AE%A4%E8%AF%86/</guid>
-      <description>HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--这里主要是声名HTML的类型--&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--从这里开始包含HTML页面内容--&amp;gt;  &amp;lt;head&amp;gt; &amp;lt;!--头部结构，里面可以有title、meta、link等内容--&amp;gt;  &amp;lt;/head&amp;gt; &amp;lt;!--闭环head--&amp;gt;  &amp;lt;body&amp;gt; &amp;lt;!--主体，以下内容就是浏览器页面显示的东西--&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;!--闭环head--&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!--闭环HTML--&amp;gt; HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应</description>
+      <description>HTML HTML 指的是超文本标记语言: HyperText Markup Language HTML 不是一种编程语言，而是一种标记语言
+HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--这里主要是声名HTML的类型--&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--从这里开始包含HTML页面内容--&amp;gt;  &amp;lt;head&amp;gt; &amp;lt;!--头部结构，里面可以有title、meta、link等内容--&amp;gt;  &amp;lt;/head&amp;gt; &amp;lt;!--闭环head--&amp;gt;  &amp;lt;body&amp;gt; &amp;lt;!--主体，以下内容就是浏览器页面显示的东西--&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;!--闭环head--&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!--闭环HTML--&amp;gt; HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应
+ 网络上有很多不同的文件，如果能够正确声明HTML的版本，浏览器就能正确显示网页内容。</description>
     </item>
     
     <item>
@@ -115,24 +141,6 @@ Follow the following steps:
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Test 5</title>
-      <link>https://www.ggood.xyz/post/test-5/</link>
-      <pubDate>Sun, 05 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ggood.xyz/post/test-5/</guid>
-      <description>Test 5</description>
-    </item>
-    
-    <item>
-      <title>Test 4</title>
-      <link>https://www.ggood.xyz/post/test-4/</link>
-      <pubDate>Sat, 04 Jan 1012 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ggood.xyz/post/test-4/</guid>
-      <description>Test 4</description>
     </item>
     
     <item>

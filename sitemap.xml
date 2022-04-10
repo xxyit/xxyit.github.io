@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.ggood.xyz/tags/if-else/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+    <loc>https://www.ggood.xyz/tags/html/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE2/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/post/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/%E6%A0%87%E7%AD%BE/</loc>
+    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE1/</loc>
+    <lastmod>2022-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/if-else/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/tags/python/</loc>
@@ -17,17 +35,8 @@
     <loc>https://www.ggood.xyz/post/python%E7%9A%84if-else%E5%88%A4%E6%96%AD%E4%BB%A5%E5%8F%8Acontinuebreak%E7%94%A8%E6%B3%95/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ggood.xyz/tags/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.ggood.xyz/tags/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/tags/html/</loc>
-    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
@@ -96,13 +105,7 @@
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/tags/test/</loc>
-    <lastmod>1012-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/post/test-5/</loc>
-    <lastmod>1012-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/post/test-4/</loc>
-    <lastmod>1012-01-04T00:00:00+00:00</lastmod>
+    <lastmod>1012-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/post/test-3/</loc>
     <lastmod>1012-01-03T00:00:00+00:00</lastmod>

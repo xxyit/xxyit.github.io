@@ -12,7 +12,9 @@
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://www.ggood.xyz/post/%E5%89%8D%E7%AB%AF%E7%9A%84html%E7%9A%84%E7%BB%93%E6%9E%84%E8%AE%A4%E8%AF%86/</guid>
-      <description>HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--这里主要是声名HTML的类型--&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--从这里开始包含HTML页面内容--&amp;gt;  &amp;lt;head&amp;gt; &amp;lt;!--头部结构，里面可以有title、meta、link等内容--&amp;gt;  &amp;lt;/head&amp;gt; &amp;lt;!--闭环head--&amp;gt;  &amp;lt;body&amp;gt; &amp;lt;!--主体，以下内容就是浏览器页面显示的东西--&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;!--闭环head--&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!--闭环HTML--&amp;gt; HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应</description>
+      <description>HTML HTML 指的是超文本标记语言: HyperText Markup Language HTML 不是一种编程语言，而是一种标记语言
+HTML主要结构 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--这里主要是声名HTML的类型--&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;!--从这里开始包含HTML页面内容--&amp;gt;  &amp;lt;head&amp;gt; &amp;lt;!--头部结构，里面可以有title、meta、link等内容--&amp;gt;  &amp;lt;/head&amp;gt; &amp;lt;!--闭环head--&amp;gt;  &amp;lt;body&amp;gt; &amp;lt;!--主体，以下内容就是浏览器页面显示的东西--&amp;gt;  &amp;lt;/body&amp;gt; &amp;lt;!--闭环head--&amp;gt; &amp;lt;/html&amp;gt; &amp;lt;!--闭环HTML--&amp;gt; HTML基本上都是以层级嵌套的形式编写内容，每个标签都会有相应的开始结束头尾对应
+ 网络上有很多不同的文件，如果能够正确声明HTML的版本，浏览器就能正确显示网页内容。</description>
     </item>
     
   </channel>
