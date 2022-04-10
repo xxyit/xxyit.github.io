@@ -2,31 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE5/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/post/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/python/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/tags/%E6%A0%87%E7%AD%BE/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE4/</loc>
+    <lastmod>2022-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE3/</loc>
+    <lastmod>2022-04-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.ggood.xyz/tags/html/</loc>
     <lastmod>2022-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE2/</loc>
     <lastmod>2022-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ggood.xyz/post/</loc>
-    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/tags/</loc>
-    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/</loc>
-    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/tags/%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2022-04-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.ggood.xyz/post/html%E4%B8%AD%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%A0%87%E7%AD%BE1/</loc>
     <lastmod>2022-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/tags/if...else/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/tags/python/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/post/python%E4%B8%AD%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84whilefor%E5%BE%AA%E7%8E%AF/</loc>
@@ -103,18 +112,6 @@
   </url><url>
     <loc>https://www.ggood.xyz/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/tags/test/</loc>
-    <lastmod>1012-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/post/test-3/</loc>
-    <lastmod>1012-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/post/test-2/</loc>
-    <lastmod>1012-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ggood.xyz/post/test-1/</loc>
-    <lastmod>1012-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ggood.xyz/about/</loc>
   </url><url>
